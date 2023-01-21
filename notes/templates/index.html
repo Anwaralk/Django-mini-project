@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Welcome to the Cheatsheet!</h1>
+
+{% for n in my_notes %}
+<div class="card" style="width: 18rem;">
+   
+    <div class="card-body">
+      <h5 class="card-title">{{Note.subject}}</h5>
+      <p class="card-text">{{Note.explanation}}</p>
+      <p class="card-text">{{Note.explanation}}</p>
+
+    
+    </div>
+  </div>
+  {% endfor %}
+{% endblock content %} 
